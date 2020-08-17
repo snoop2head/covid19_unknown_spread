@@ -4,8 +4,8 @@
 
 Visualizing Seoul's untracked Covid19 patients out of daily confirmed cases. 
 
-* [Data Collection Reference](https://github.com/corazzon/cracking-the-pandas-cheat-sheet/blob/master/seoul-covid-19-01-read_html.ipynb)
-* [Data analysis reference](https://github.com/corazzon/cracking-the-pandas-cheat-sheet/blob/master/seoul-covid-19-02-eda.ipynb)
+* [Data Collection Reference](https://github.com/corazzon/cracking-the-pandas-cheat-sheet/blob/master/seoul-covid-19-02-eda-input.ipynb)
+* [Data analysis reference](https://github.com/corazzon/cracking-the-pandas-cheat-sheet/blob/master/seoul-covid-19-02-eda-output.ipynb)
 * [Tracked Patients dataset: Seoul's Covid19 status board](http://www.seoul.go.kr/coronaV/coronaStatus.do)
 
 ### Daily Trends of confirmed cases in Seoul
