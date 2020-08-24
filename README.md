@@ -10,16 +10,14 @@ Visualizing Seoul's untracked Covid19 patients out of daily confirmed cases.
 
 ### Daily Trends of confirmed cases in Seoul
 
-![img1](./img/download.png)
+Total Confirmed Cases vs Untracked Confirmed cases
+
+![img1](./img/confirmed_vs_unconfirmed.png)
 
 ### Tracking where the patient caught Covid19 from
 
-![img2](./img/download2.png)
-
-### Total Confirmed Cases vs Untracked Confirmed cases
-
-![img3](./img/download4.png)
+![img2](./img/confirmed_path_rank.png)
 
 ### Proportion of Untracked Confirmed Cases
 
-![](./img/download5.png)
+![](./img/unconfirmed_cases.png)
