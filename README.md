@@ -1,6 +1,6 @@
 # Covid19 Unknown Spread in Seoul
 
-## [What's the trend of untracked Covid19 patients in Seoul?](./Seoul-Covid19.ipynb)
+## [What's the trend of untracked Covid19 patients in Seoul?](https://nbviewer.jupyter.org/github/snoop2head/covid19_unknown_spread/blob/master/Seoul-Covid19.ipynb)
 
 Visualizing Seoul's untracked Covid19 patients out of daily confirmed cases. 
 
