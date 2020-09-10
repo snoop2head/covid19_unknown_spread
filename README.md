@@ -24,7 +24,7 @@ Total Confirmed Cases vs Untracked Confirmed cases
 
 ## 8.15일 집회 이후 변한 코로나19 지표들
 
-### 경로미상 확진자 수 (node)
+### 경로 불명 확진자 수 (node)
 
 * 광복절 이전 4주 간 46명
 * 광복절 이후 4주 간 499명
@@ -32,6 +32,6 @@ Total Confirmed Cases vs Untracked Confirmed cases
 ### 감염 경로 개수 (edge)
 
 * 광복절까지 감염경로 170개
-* 9월 4일 현재 예상 감염경로 554개
+* 9월 10일 밝혀진 감염경로 약 603개
 
 ## 
