@@ -231,3 +231,4 @@ date,new_confirmed,new_untracked,new_no_paths,is_holiday,is_weekend,gov_policy
 2020-09-09,47,9,11.0,0,0,3
 2020-09-10,63,10,16.0,0,0,3
 2020-09-11,50,14,15.0,0,1,3
+2020-09-12,31,11,11.0,0,1,3
