@@ -1,8 +1,50 @@
+"""
+Copyright 2020 YoungjinAhn
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+"""
+
+import platform
+import os.path as osp
 from datetime import date
 from selenium import webdriver
 import time
 import pandas as pd
 import numpy as np
+
+
+""" 
+OS Detection and chromedriver allocation 
+Code Source: YoongiKim AutoCrawler
+"""
+
+if platform.system() == "Windows":
+    print("Detected OS : Windows")
+    executable = "./chromedriver/chromedriver_win32.exe"
+elif platform.system() == "Linux":
+    print("Detected OS : Linux")
+    executable = "./chromedriver/chromedriver_linux64"
+elif platform.system() == "Darwin":
+    print("Detected OS : Mac")
+    executable = "./chromedriver/chromedriver_mac64"
+else:
+    raise OSError("Unknown OS Type")
+
+if not osp.exists(executable):
+    raise FileNotFoundError(
+        "Chromedriver file should be placed at {}".format(executable)
+    )
+
 
 today = date.today()
 print("Today's date:", today)
@@ -21,7 +63,7 @@ options.add_experimental_option(
 )
 
 # set up driver
-driver = webdriver.Chrome("./chromedriver", options=options)
+driver = webdriver.Chrome(executable, options=options)
 
 # target url for the covid19 data: Seoul City
 url = "http://www.seoul.go.kr/coronaV/coronaStatus.do"
