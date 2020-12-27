@@ -9,7 +9,7 @@ print("Today's date:", today)
 
 # chrome driver options
 options = webdriver.ChromeOptions()
-# options.add_argument("headless")
+options.add_argument("headless")
 options.add_experimental_option(
     "prefs",
     {
@@ -48,7 +48,7 @@ for num in range(int_last_index):
         if "연번" in table:
             list_patient_data_100.append(table)
 
-    display(list_patient_data_100[0])
+    print(list_patient_data_100[0])
     list_patient_data_total.append(list_patient_data_100[0])
 
     button_paginate_next = driver.find_element_by_xpath(
@@ -58,8 +58,8 @@ for num in range(int_last_index):
     time.sleep(1.5)
 
 df_now = pd.concat(list_patient_data_total, axis=0)
-display(df_now.head())
-display(df_now.tail())
+print(df_now.head())
+print(df_now.tail())
 
 
 """ From patient number 10000 ~ Patient number 1 """
@@ -86,7 +86,7 @@ for num in range(int_last_index):
     for table in tables:
         if "연번" in table:
             list_patient_data_100.append(table)
-    display(list_patient_data_100[-1])
+    print(list_patient_data_100[-1])
     list_patient_data_total_10000.append(list_patient_data_100[-1])
 
     paginate_next_2 = driver.find_element_by_xpath(
@@ -96,14 +96,14 @@ for num in range(int_last_index):
     time.sleep(1.5)
 
 df_10000 = pd.concat(list_patient_data_total_10000, axis=0)
-display(df_10000.head())
-display(df_10000.tail())
+print(df_10000.head())
+print(df_10000.tail())
 
 
 """ Combine those two crawled dataframes """
 df = pd.concat([df_now, df_10000], axis=0)
-display(df.head())
-display(df.tail())
+print(df.head())
+print(df.tail())
 
 # most upto-date data
 last_day = df["확진일"].iloc[0]
@@ -116,4 +116,5 @@ file_name = f"seoul_covid_{last_day}.csv"
 file_path = dataset_path + file_name
 print(file_path)
 
+df = df.sort_values(["연번"], ascending=False)
 df.to_csv(file_path, index=False)
