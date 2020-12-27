@@ -2,6 +2,8 @@
 
 ## What's the trend of untracked Covid19 patients in Seoul?
 
+Up to date until 2020-12-27
+
 * [Visualizing Seoul's untracked Covid19 patients out of daily confirmed cases. ](https://nbviewer.jupyter.org/github/snoop2head/covid19_unknown_spread/blob/master/track_unknown_paths.ipynb)
 * [Wrangling dataset for LSTM forecast](https://nbviewer.jupyter.org/github/snoop2head/covid19_unknown_spread/blob/master/wrangle_for_forecast.ipynb)
 * [Forecasting Seoul's Covid19 patients with LSTM, based on untracked_patients, number of infection paths, weekend, holiday data.](https://nbviewer.jupyter.org/github/snoop2head/covid19_unknown_spread/blob/master/forecast_seoul_covid19.ipynb)
